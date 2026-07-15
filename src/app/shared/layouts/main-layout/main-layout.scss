@@ -1,0 +1,20 @@
+.container {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.contenido {
+  padding: 20px;
+}
+
+mat-nav-list a {
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
