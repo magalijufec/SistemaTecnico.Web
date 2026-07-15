@@ -2,9 +2,9 @@ import { Routes } from '@angular/router';
 
 import { MainLayoutComponent } from './shared/layouts/main-layout/main-layout';
 import { DashboardComponent } from './features/dashboard/dashboard/dashboard';
-import { TrabajosList } from './features/trabajos/trabajos-list/trabajos-list';
-import { UsuariosList } from './features/usuarios/usuarios-list/usuarios-list';
-import { ClientesList } from './features/clientes/clientes-list/clientes-list';
+import { TrabajosListComponent } from './features/trabajos/trabajos-list/trabajos-list';
+import {  UsuariosListComponent } from './features/usuarios/usuarios-list/usuarios-list';
+import { ClientesListComponent } from './features/clientes/clientes-list/clientes-list';
 
 export const routes: Routes = [
 
@@ -27,17 +27,17 @@ component:DashboardComponent
 
 {
 path:'trabajos',
-component:TrabajosList
+component:TrabajosListComponent
 },
 
 {
 path:'usuarios',
-component:UsuariosList
+component:UsuariosListComponent
 },
 
 {
 path:'clientes',
-component:ClientesList
+component:ClientesListComponent
 }
 
 ]

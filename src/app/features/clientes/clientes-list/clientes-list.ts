@@ -1,9 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { ClienteService } from '../../../core/services/cliente.service';
+import { Cliente } from '../../../core/models/cliente';
 
 @Component({
   selector: 'app-clientes-list',
-  imports: [],
   templateUrl: './clientes-list.html',
-  styleUrl: './clientes-list.scss',
+  styleUrl: './clientes-list.scss'
 })
-export class ClientesList {}
+export class ClientesListComponent implements OnInit {
+
+    private clienteService = inject(ClienteService);
+
+    clientes:Cliente[]=[];
+
+    ngOnInit(): void {
+
+        // this.clienteService.obtenerTodos().subscribe({
+
+        //     next:(data)=>{
+
+        //         this.clientes=data;
+
+        //     }
+
+        // });
+
+    }
+
+}

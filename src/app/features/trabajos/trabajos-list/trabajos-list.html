@@ -1,1 +1,25 @@
-<h1>Trabajos</h1>
+<h2>Trabajos</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Cliente</th>
+      <th>Técnico</th>
+      <th>Tarea</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (trabajo of trabajos; track trabajo.id) {
+      <tr>
+        <td>{{ trabajo.id }}</td>
+        <td>{{ trabajo.cliente }}</td>
+        <td>{{ trabajo.tecnico }}</td>
+        <td>{{ trabajo.tarea }}</td>
+        <td>{{ trabajo.estado }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
